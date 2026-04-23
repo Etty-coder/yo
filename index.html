@@ -1,34 +1,144 @@
-<html>
-    <head>
-        <title>la mia pagina di collegamenti</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>La mia pagina di collegamenti</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555555;
+            line-height: 1.5;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .link-item a {
+            display: block;
+            text-decoration: none;
+            background: #007bff;
+            color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .link-item a:hover {
+            background: #0056b3;
+            transform: translateY(-1px);
+        }
+
+        .link-item a:active {
+            transform: translateY(0);
+        }
+
+        .button-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 18px;
+            border-radius: 6px;
+            border: none;
+            background: #6c757d;
+            color: #ffffff;
+            cursor: not-allowed;
+            font-size: 14px;
+        }
+
+        .footer-text {
+            text-align: center;
+            font-style: italic;
+            color: #666666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>La mia pagina di collegamenti</h1>
+
+    <div class="intro">
+        <p>Ciao mondo!</p>
+        <p>Sono uno sviluppatore web!</p>
+    </div>
+
+    <div class="links-list">
+        <div class="link-item">
+            <a href="https://www.google.com" target="_blank">Vai su Google</a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.facebook.com" target="_blank">Vai su Facebook</a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.youtube.com" target="_blank">Vai su YouTube</a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.instagram.com" target="_blank">Vai su Instagram</a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.twitter.com" target="_blank">Vai su Twitter</a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.tiktok.com" target="_blank">Vai su TikTok</a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.epicgames.com" target="_blank">Vai su Epic Games</a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.netflix.com" target="_blank">Vai su Netflix</a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.spotify.com" target="_blank">Vai su Spotify</a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.amazon.com" target="_blank">Vai su Amazon</a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.reddit.com" target="_blank">Vai su Reddit</a>
+        </div>
+    </div>
+
+    <div class="button-row">
     
-    <P>Ciao mondo!</P>
-    <P>Sono un sviluppatore web!</P>
-    <a href="https://www.google.com">Vai su Google</a>
-    <hr>
-    <a href="https://www.facebook.com">Vai su Facebook</a>
-    <hr>
-    <a href="https://www.youtube.com">Vai su YouTube</a>
-    <hr>
-    <a href="https://www.instagram.com">Vai su Instagram</a>
-    <hr>
-    <a href="https://www.twitter.com">Vai su Twitter</a>
-    <hr>
-    <a href="https://www.tiktok.com">Vai su TikTok</a>
-    <hr>
-    <a href="https://www.epicgames.com">Vai su Epic Games</a>
-    <hr>
-    <a href="https://www.netflix.com">Vai su Netflix
-    <hr>
-    <a href="https://www.spotify.com">Vai su Spotify</a>
-    <hr>
-    <a href="https://www.amazon.com">Vai su Amazon</a>
-    <hr>
-    <a href="https://www.reddit.com">Vai su Reddit</a>
-    <hr>
-    <button>Cliccami, non succede niente</button>
-    <p>Grazie per aver visitato la mia pagina!</p>
-    </body>
+     </div>
+
+    <p class="footer-text">Grazie per aver visitato la mia pagina!</p>
+</div>
+
+</body>
 </html>
